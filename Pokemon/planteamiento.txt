@@ -1,0 +1,55 @@
+POKEMON
+
+------------------------------------------------------------------------------
+
+Clase pokemon. 
+	
+caracteristicas:
+	int numPokedex
+	String nombre
+	String tipo (enum)? --> agua, fuego, etc.
+	int nivel
+	int vida
+	Ataque ataqueRapido
+	Ataque ataqueCargado
+metodos:
+	
+	
+------------------------------------------------------------------------------
+	
+Clase Ataque. caracteristicas:
+	String nombre
+	String tipo	--> rapido o cargado
+	int energia
+	int potencia
+	* para lanzar un ataque cargado, hay que tener energia suficiente.
+	* un ataque rapido genera la energia para lanzar un ataque cargado.
+
+
+------------------------------------------------------------------------------
+
+Clase Objetos. caracteristicas:
+	String nombre
+	String tipo (salud_pociones, ataques_MTr/MTc, cmraro_nivel)
+
+
+------------------------------------------------------------------------------
+
+Clase Entrenador. 
+
+caracteristicas:
+	String nombre
+	array Pokemons
+	array Objetos
+metodos:
+	UTILIZAR OBJETOS
+	curarPokemon(Objeto pocion, Pokemon p)
+	cambiarAtaqueRapidoPokemon(Objeto MTrapido, Pokemon p)
+	cambiarAtaqueCargadoPokemon(Objeto MTcargado, Pokemon p)
+	darCarameloPokemon(Objeto cmRaro, Pokemon p)
+
+	COMBATES
+	luchar(Pokemon p, Ataque a)
+	
+	
+	
